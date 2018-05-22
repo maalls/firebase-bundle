@@ -1,0 +1,18 @@
+services:
+
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        public: false  
+
+    Maalls\SocialMediaContentBundle\:
+        resource: '../../*'
+        exclude: '../../{Entity,Migrations,Tests}'
+
+    Maalls\FirebaseBundle\Service\Factory:
+        arguments: 
+          $key: '%env(INSTAGRAM_API_KEY)%' 
+          $secret: '%env(INSTAGRAM_API_SECRET)%'
+          $callback: '%env(INSTAGRAM_API_CALLBACK)%'
+          $accessToken: '%env(INSTAGRAM_ACCESS_TOKEN)%'
+
