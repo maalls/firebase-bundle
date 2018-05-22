@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Maalls\SocialMediaContentBundle\DependencyInjection;
+namespace Maalls\FirebaseBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
