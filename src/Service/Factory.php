@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Maalls\SocialMediaContentBundle\Lib\Firebase;
+namespace Maalls\FirebaseBundle\Service;
 
 
 class Factory {
