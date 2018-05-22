@@ -11,8 +11,6 @@ services:
 
     Maalls\FirebaseBundle\Service\Factory:
         arguments: 
-          $key: '%env(INSTAGRAM_API_KEY)%' 
-          $secret: '%env(INSTAGRAM_API_SECRET)%'
-          $callback: '%env(INSTAGRAM_API_CALLBACK)%'
-          $accessToken: '%env(INSTAGRAM_ACCESS_TOKEN)%'
-
+          $url: '%env(INSTAGRAM_API_KEY)%' 
+          $key: '%env(INSTAGRAM_API_SECRET)%'
+          
