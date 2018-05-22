@@ -4,7 +4,7 @@
 namespace Maalls\FirebaseBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
-use Maalls\FirebaseBundle\DependencyInjection\FirebaseExtension;
+use Maalls\FirebaseBundle\DependencyInjection\MaallsFirebaseExtension;
 
 class FirebaseBundle extends Bundle
 {
