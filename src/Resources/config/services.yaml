@@ -11,6 +11,9 @@ services:
 
     Maalls\FirebaseBundle\Service\Factory:
         arguments: 
-          $url: '%env(INSTAGRAM_API_KEY)%' 
-          $key: '%env(INSTAGRAM_API_SECRET)%'
-          
+          $url: '%env(FIREBASE_DATABASE_URL)%' 
+          $key: '%env(FIREBASE_API_KEY)%'
+    Maalls\FirebaseBundle\Service\Firebase:
+        arguments: 
+          $url: '%env(FIREBASE_DATABASE_URL)%' 
+          $key: '%env(FIREBASE_API_KEY)%'
